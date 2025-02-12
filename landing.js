@@ -1,4 +1,15 @@
-window.addEventListener('scroll',()=>
-{
-    document.body.style.setProperty['--scroll',window.pageXOffset/document.body.offsetHeight-window.innerHeight]
-})
+let next = document.querySelector('.next');
+let prev = document.querySelector('.prev');
+
+next.addEventListener('click', function () {
+    let items = document.querySelectorAll('.item'); // Get all items
+    let slide = document.querySelector('.slide'); 
+
+    slide.appendChild(items[0]); // Move the first item to the end
+});
+prev.addEventListener('click', function () {
+    let items = document.querySelectorAll('.item'); // Get all items
+    let slide = document.querySelector('.slide'); 
+
+    slide.prepend(items[items.length-1]); // Move the first item to the end
+});
