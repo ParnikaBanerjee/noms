@@ -13,3 +13,12 @@ prev.addEventListener('click', function () {
 
     slide.prepend(items[items.length-1]); // Move the first item to the end
 });
+function shuffleCards() {
+    let container = document.getElementById("cardContainer");
+    let cards = Array.from(container.children);
+
+    cards.sort(() => Math.random() - 0.5);
+
+    container.innerHTML = "";
+    cards.forEach(card => container.appendChild(card));
+}

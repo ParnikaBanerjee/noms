@@ -7,34 +7,146 @@
     <link rel="stylesheet" href="landing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Luxurious+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="landing">
         <div class="navbar">
-            <div class="logo">
-                <img src="data:image/jpeg;base64,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">
+            <div class="pizza">
+                <img src="https://static.vecteezy.com/system/resources/previews/024/589/246/non_2x/top-view-pizza-with-ai-generated-free-png.png">
             </div>
             <div class="navlist">
                 <ul>
-                    <li><a href="#">About</a></li>
+                    <li><a href="landing.html">About</a></li>
                     <li><a href="cusiniepage.html">Cuisines</a></li>
-                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Book</a></li>
+                    <li><a href="#">Quickies</a></li>
                     <li><a href="#">Login</a></li>
                 </ul>
             </div>
         </div>
         <div class="about">
-            <h1>Scrumptious Bites</h1>
+            <h1><span class="n">N</span>ova<span class="l">l</span>or</h1>
             <h3>
-                Cormorant Garamond Cormorant Garamond Cormorant Garamond Cormorant Garamond Cormorant Garamond
+                Welcome to Novalor, where classic elegance meets the art of fine dining.
+                As a distinguished gourmet chain, we pride ourselves on offering an exquisite range of dishes from around the world, expertly crafted to deliver a memorable culinary experience.
             </h3>   
         </div>
-        <div class="pizza">
-            <img src="https://static.vecteezy.com/system/resources/previews/024/589/246/non_2x/top-view-pizza-with-ai-generated-free-png.png">
+    </section>
+    <section class="locations">
+        <div class="container">
+            <h1>Shuffle the Cards</h1>
+            <button onclick="shuffleCards()">Shuffle</button>
+            <div class="card-container" id="cardContainer">
+                <div class="card"><img src="images/img1.jpg" alt="Image 1"></div>
+                <div class="card"><img src="images/img2.jpg" alt="Image 2"></div>
+                <div class="card"><img src="images/img3.jpg" alt="Image 3"></div>
+                <div class="card"><img src="images/img4.jpg" alt="Image 4"></div>
+                <div class="card"><img src="images/img5.jpg" alt="Image 5"></div>
+            </div>
         </div>
     </section>
+    <section class="values-section">
+        <h2>Our Core Values Guide Our Service</h2>
+        <p>Our restaurant is built on five key values that ensure exceptional quality, innovation, and customer satisfaction.</p>
+        <div class="values-container">
+            <div class="value-item">
+                <img src="https://static.thenounproject.com/png/1717601-200.png" alt="Quality">
+                <h3>Quality</h3>
+                <p>We use only the freshest, high-quality ingredients.</p>
+            </div>
+            <div class="value-item">
+                <img src="https://static.thenounproject.com/png/3203088-200.png"  alt="Fresh Ingredients">
+                <h3>Fresh Ingredients</h3>
+                <p>Our dishes are made with locally sourced produce.</p>
+            </div>
+            <div class="value-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/5145/5145438.png" alt="Tradition">
+                <h3>Tradition</h3>
+                <p>A legacy of fine dining, passed down for generations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="awards-section">
+        <h2>Award-Winning Excellence</h2>
+        <div class="awards-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/MichelinStar.svg/1876px-MichelinStar.svg.png" alt="Michelin Star">
+            <img src="https://www.fmi.org/images/default-source/family-meals/gold-plate-award-rebranded-logo-final.png?sfvrsn=8765627c_0&MaxWidth=900&MaxHeight=720&ScaleUp=false&Quality=High&Method=ResizeFitToAreaArguments&Signature=A4ECBD201A8EE2E6C60F993A19C913E9" alt="Gold Plate Award">
+            <img src="https://www.afoodieworld.com/wp-content/uploads/2024/03/Foodie-Forks-2024-logo.jpg" alt="Foodie forks">
+        </div>
+    </section>
+    <section class="statsection">
+        <div class="stats-div">
+            <div>
+                <div class="stat" data-target="500">15</div>
+                <div class="label">Countries</div>
+            </div>
+            <div>
+                <div class="stat" data-target="1200">200+</div>
+                <div class="label">Gourmet Outlets</div>
+            </div>
+            <div>
+                <div class="stat" data-target="350">500+</div>
+                <div class="label">Michellin Chefs</div>
+            </div>
+        </div>
+    </section>
+    <section class="booking">
+        <div class="reservation-container">
+            <div class="book">
+                <h2>Book a Table</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+    
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+    
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests" required>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6+">6+ People</option>
+                </select>
+    
+                <label for="message">Special Requests</label>
+                <textarea id="message" name="message" rows="3" placeholder="Any dietary restrictions or special requests?"></textarea>
+    
+                <button type="submit">Reserve Table</button>
+            </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Novalor. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="landing.js"></script>
    
 </body>
 </html>

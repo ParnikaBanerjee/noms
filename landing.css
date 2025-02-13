@@ -10,8 +10,14 @@ body{
     color:var(--white);
     font-family: "Cormorant", serif ;
     margin: 0px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
+.luxurious-script-regular {
+    font-family: "Luxurious Script", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 .cormorant {
     font-family: "Cormorant", serif;
     font-optical-sizing: auto;
@@ -21,18 +27,25 @@ body{
 .about h1{
     font-size: 50px;;
 }
+.about{
+    margin:80px;
+}
+.n,.l{
+    font-family:"Luxurious Script", serif; 
+    font-size: 100px;
+    color:var(--orange);
+}
 .about h3{
-    font-size: 35px;;
+    font-size: 20px;
+    font-weight: lighter;
+    width:400px;
 }
 .navbar{
     display: flex;
     width:100%;
     flex-direction: row;  
     justify-content: space-between;
-}
-.logo img{
-    width:50px;
-    height:50px;
+    background-color: rgb(76, 72, 72,0.5);;
 }
 ul{
     display:flex ;
@@ -44,9 +57,9 @@ ul{
     display: flex;
     width: 600px;
     height:600px; 
-    top:50%;
     left:50%;
-    transform: translate(-50%,-50%);
+    top:80%;
+    transform:translate(-50%,-50%);
     background: var(--white);
     box-shadow: 0 30px 30px var(--grey);
 }
@@ -139,8 +152,13 @@ li:hover{
     color:var(--orange)
 }
 .landing{
-    background-image: url(https://thumbs.dreamstime.com/b/beautifully-plated-gourmet-dish-featuring-fresh-vegetables-sleek-black-plate-ideal-showcasing-modern-culinary-artistry-328517786.jpg);
+    background-image: url(https://i.pinimg.com/736x/8e/5b/a7/8e5ba7ec864dcd8d4c2b7183b50e18cd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    background-position: center;
     margin: 0px;
+    height:600px;
 }
 .dishesheader img{
     width:100px;
@@ -153,6 +171,8 @@ li:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding:30px 20px;
+    margin:0px 50px;
 }
 li{
     padding: 10px;
@@ -163,14 +183,22 @@ li a{
     color: var(--white);
     text-decoration: none;
 }
+li a:hover{
+    color:var(--orange)
+}
 .pizza img{
+    margin:5px;
     display:flex;
     justify-content: center;
     align-content:center ;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     animation: swirl 3s ease-in-out infinite;
     
+}
+.about{
+    text-align: left;
+    margin:50px;
 }
 @keyframes swirl{
     100%{
@@ -199,4 +227,122 @@ html{
     border: 1px solid black;
     transition: 0.3s;
 
+}
+.book form{
+    display: flex;
+    padding:20px;
+    margin:20px;
+    flex-direction: column;
+    padding:20px;
+}
+.book{
+    display: flex;
+    margin:50px;
+    justify-content: center;
+    align-items:center;
+    width:600px;
+    text-align: center;
+    background-color: var(--darkg);
+    flex-direction: column;
+    border-radius: 20px;
+}
+.book form input,select{
+    margin:10px;
+    border-radius: 20px;
+    height:35px;
+    width:250px;
+}
+.book form textarea{
+    height:100px;
+    margin:20px;
+    border-radius: 10px;
+    border-color: none;
+}
+.book form button{
+    height:40px;
+    width:200px;
+    border-radius: 20px;
+    background-color: var(--orange);
+    color: var(--white);
+}
+.booking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    text-align: center;
+    background-color: var(--orange);
+    color: var(--white);
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.statsection{
+    text-align: center;
+
+}
+.stats-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    background-color: var(--darkg);
+    border-radius: 20px;
+    width: 800px;
+
+    left: 50%;
+
+}
+.stat {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.label {
+    font-size: 1.2rem;
+    color: var(--white);
+}
+.values-section, .awards-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.value-item {
+    width: 180px;
+    padding: 20px;
+
+    text-align: center;
+}
+.values-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.value-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    filter: invert(1);
+}
+
+.awards-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.awards-container img {
+    width: 120px;
+    height: auto;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.awards-container img:hover {
+    opacity: 1;
 }
