@@ -226,11 +226,14 @@ html{
 
 }
 .book form{
-    display: flex;
+
     padding:20px;
     margin:20px;
     flex-direction: column;
     padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .book{
     display: flex;
@@ -247,20 +250,26 @@ html{
     margin:10px;
     border-radius: 20px;
     height:35px;
-    width:250px;
+    width:300px;
 }
 .book form textarea{
     height:100px;
     margin:20px;
+    width:300px;
     border-radius: 10px;
     border-color: none;
 }
 .book form button{
     height:40px;
-    width:200px;
+    width:300px;
     border-radius: 20px;
     background-color: var(--orange);
     color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-color: none;
 }
 .booking{
     display: flex;
@@ -348,4 +357,85 @@ html{
 
 .awards-container img:hover {
     opacity: 1;
+}
+:root {
+    --duration: 10s;
+    --delay: 30s;
+}
+
+.waterfall {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 70vw;  /* Images only in the left half of the screen */
+    height: 100vh;
+    overflow: hidden;
+    animation: shrink var(--duration) var(--delay) linear infinite;
+    transform-style: preserve-3d;
+    perspective: 25rem;
+}
+
+.waterfall img {
+    position: absolute;
+    top: 0;
+    width: 25vw; /* Smaller width for better spread */
+    transform: translateY(200vh);
+    animation: float-up var(--duration) linear infinite;
+    box-shadow: 1px 3px 15px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+/* Staggered Placement: Left Half of Screen */
+.waterfall img:nth-child(1) { left: 5vw; animation-duration: 18s; }
+.waterfall img:nth-child(2) { left: 15vw; animation-duration: 20s; }
+.waterfall img:nth-child(3) { left: 30vw; animation-duration: 22s; }
+.waterfall img:nth-child(4) { left: 10vw; animation-duration: 24s; }
+.waterfall img:nth-child(5) { left: 20vw; animation-duration: 26s; }
+.waterfall img:nth-child(6) { left: 40vw; animation-duration: 28s; }
+.waterfall img:nth-child(7) { left: 8vw; animation-duration: 30s; }
+.waterfall img:nth-child(8) { left: 35vw; animation-duration: 32s; }
+.waterfall img:nth-child(9) { left: 25vw; animation-duration: 34s; }
+.waterfall img:nth-child(10) { left: 12vw; animation-duration: 36s; }
+
+/* Floating Up Animation */
+@keyframes float-up {
+    from {
+        transform: translateY(200vh);
+    }
+    to {
+        transform: translateY(-100vh);
+    }
+}
+
+/* Shrink Effect */
+@keyframes shrink {
+    0% { transform: scale(1) translateX(0); }
+    2.5% { transform: scale(0.75) translateX(5%); }
+    7.5% { transform: scale(0.75) translateX(-5%); }
+    10%, 100% { transform: scale(1); }
+}
+
+.locations{
+    display: flex;
+    flex-direction: row;
+    margin:40px;
+}
+.locationdescp h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.locationdescp p {
+    font-size: 1.2rem;
+    width: 80%;  
+    line-height: 1.5;
+}
+.locationdescp {
+    width: 30vw;  /* Description covers 30% of the screen width */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
