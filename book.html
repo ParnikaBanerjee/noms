@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="pizza">
+            <img src="https://static.vecteezy.com/system/resources/previews/024/589/246/non_2x/top-view-pizza-with-ai-generated-free-png.png">
+        </div>
+        <div class="navlist">
+            <ul>
+                <li><a href="landing.html">About</a></li>
+                <li><a href="cusiniepage.html">Cuisines</a></li>
+                <li><a href="book.html">Book</a></li>
+                <li><a href="quickies.html">Quickies</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="booking">
+        <div class="reservation-container">
+            <div class="book">
+                <h2>Book a Table</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+    
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+    
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests" required>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6+">6+ People</option>
+                </select>
+    
+                <label for="message">Special Requests</label>
+                <textarea id="message" name="message" rows="3" placeholder="Any dietary restrictions or special requests?"></textarea>
+    
+                <button type="submit">Reserve Table</button>
+            </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Novalor. All rights reserved.</p>
+        </div> 
+</body>
+</html>

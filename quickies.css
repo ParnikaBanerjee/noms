@@ -1,0 +1,138 @@
+:root{
+    --orange:#eb5e28;
+    --black:#252422;
+    --darkg:#403d39;
+    --white:#fffcf2;
+    --grey:#ccc5b9;
+}
+body{
+    background-color: var(--black);
+    color:var(--white);
+    font-family: "Cormorant", serif ;
+    margin: 0px;
+    overflow-x: hidden;
+}
+.luxurious-script-regular {
+    font-family: "Luxurious Script", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.cormorant {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e04b2b;
+}
+
+.recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.recipe-card {
+    width: 250px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.recipe-card a {
+    display: block;
+    text-decoration: none;
+    color: #ff5733;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.navbar{
+    display: flex;
+    width:100%;
+    flex-direction: row;  
+    justify-content: space-between;
+    background-color: rgb(76, 72, 72,0.5);;
+}
+ul{
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-between;
+}
+li{
+    padding: 10px;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+li a{
+    color: var(--white);
+    text-decoration: none;
+}
+li a:hover{
+    color:var(--orange)
+}
+.pizza img{
+    margin:5px;
+    display:flex;
+    justify-content: center;
+    align-content:center ;
+    width: 50px;
+    height: 50px;
+    animation: swirl 3s ease-in-out infinite;
+    
+}

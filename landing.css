@@ -148,9 +148,6 @@ ul{
     display: flex;
     flex-direction: column;
 }
-li:hover{
-    color:var(--orange)
-}
 .landing{
     background-image: url(https://i.pinimg.com/736x/8e/5b/a7/8e5ba7ec864dcd8d4c2b7183b50e18cd.jpg);
     background-repeat: no-repeat;
@@ -294,6 +291,10 @@ html{
     width: 800px;
 
     left: 50%;
+    position: relative;  /* Keeps it fixed in the viewport */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin:30px;
 
 }
 .stat {
@@ -333,7 +334,9 @@ html{
     justify-content: center;
     gap: 70px;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
 }
 
 .awards-container img {
