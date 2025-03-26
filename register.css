@@ -1,0 +1,121 @@
+:root{
+    --orange:#eb5e28;
+    --black:#252422;
+    --darkg:#403d39;
+    --white:#fffcf2;
+    --grey:#ccc5b9;
+}
+body{
+    background-color: var(--black);
+    color:var(--white);
+    font-family: "Cormorant", serif ;
+    margin: 0px;
+    overflow-x: hidden;
+}
+.luxurious-script-regular {
+    font-family: "Luxurious Script", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.cormorant {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar{
+    display: flex;
+    width:100%;
+    flex-direction: row;  
+    justify-content: space-between;
+    background-color: rgb(76, 72, 72,0.5);;
+}
+ul{
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-between;
+}
+li{
+    padding: 10px;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+li a{
+    color: var(--white);
+    text-decoration: none;
+}
+li a:hover{
+    color:var(--orange)
+}
+.pizza img{
+    margin:5px;
+    display:flex;
+    justify-content: center;
+    align-content:center ;
+    width: 50px;
+    height: 50px;
+    animation: swirl 3s ease-in-out infinite;
+    
+}
+
+.register-container {
+    background-color: var(--darkg);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    margin: 50px auto;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--grey);
+    border-radius: 20px;
+    font-size: 16px;
+    background: var(--black);
+    color: var(--white);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e04b2b;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    background-color: var(--orange);
+    color: var(--white);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
