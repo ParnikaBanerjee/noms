@@ -1,0 +1,171 @@
+:root {
+    --orange: #eb5e28;
+    --black: #252422;
+    --darkg: #403d39;
+    --white: #fffcf2;
+    --grey: #ccc5b9;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: "Cormorant", serif;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.luxurious-script-regular {
+    font-family: "Luxurious Script", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cormorant {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(76, 72, 72, 0.5);
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+    padding: 10px;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+li a:hover {
+    color: var(--orange);
+}
+
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.restaurant {
+    background: var(--darkg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.restaurant:hover {
+    transform: scale(1.05);
+}
+
+.restaurant img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.restaurant h2 {
+    margin: 15px 0;
+    font-size: 22px;
+}
+
+.restaurant a {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.restaurant a:hover {
+    text-decoration: underline;
+}
+
+/* Menu styles */
+.restaurant .menu {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.restaurant .menu h3 {
+    color: var(--orange);
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.restaurant .menu ul {
+    display: block;
+    padding-left: 20px;
+}
+
+.restaurant .menu li {
+    padding: 5px 0;
+    text-transform: none;
+    font-size: 16px;
+    list-style-type: disc;
+    color: var(--grey);
+}
+
+.pizza img {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 40px;
+    height: 40px;
+    animation: swirl 3s ease-in-out infinite;
+}
+
+.footer {
+    text-align: center;
+    background-color: var(--orange);
+    color: var(--white);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+@keyframes swirl {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
